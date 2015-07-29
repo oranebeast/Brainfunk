@@ -45,6 +45,12 @@ def evaluate(code):
     if command == "DootDootDoot":
       cells[cellptr] = cells[cellptr] - 1 if(cells[cellptr] - 10) > 0 else 255
 
+    if command == "DootDootDo":
+      cells[cellptr] = cells[cellptr] - 5 if(cells[cellptr] - 5) > 0 else 255
+
+    if command == "TootTootTo":
+      cells[cellptr] = cells[cellptr] + 5 if(cells[cellptr] + 5) > 0 else 255
+
     if command == "Brap":
       cells[cellptr] = 0
 
@@ -60,7 +66,7 @@ def evaluate(code):
 
 
 def cleanup(code):
-  return filter(lambda x: x in ['.', ',', '[', ']', '<', '>', '+', '-'], code)
+  return filter(lambda x: x in ['Toot', 'Doot', 'TootToot', 'TootTootToot', 'DootDoot', 'DootDootDoot', 'Brap', 'Prap', 'Plap', 'Blap', 'Parp', 'Honk', 'DootDootDo', 'TootTootTo'], code)
 
 
 def buildbracemap(code):
