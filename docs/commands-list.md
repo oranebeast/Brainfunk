@@ -4,16 +4,18 @@ Basic Documentation (view raw)
 Brainfuck-to-Brainfunk
 ----------
 
-> 	Toot	Move the pointer to the right
-Traditional Brainfuck to Brainfunk
 
-< 	Doot 	Move the pointer to the left
-+ 	TootToot 	Increment the memory cell under the pointer
-- 	DootDoot 	Decrement the memory cell under the pointer
-. 	Parp 	Output the character signified by the cell at the pointer
-, 	Honk 	Input a character and store it in the cell at the pointer
-[ 	Plap 	Jump past the matching Blap if the cell under the pointer is 0
-] 	Blap 	Jump back to the matching Plap
+Traditional Brainfuck to Brainfunk
+----------
+
+	> 	Toot	Move the pointer to the right
+	< 	Doot 	Move the pointer to the left
+	+ 	TootToot 	Increment the memory cell under the pointer
+	- 	DootDoot 	Decrement the memory cell under the pointer
+	. 	Parp 	Output the character signified by the cell at the pointer
+	, 	Honk 	Input a character and store it in the cell at the pointer
+	[ 	Plap 	Jump past the matching Blap if the cell under the pointer is 0
+	] 	Blap 	Jump back to the matching Plap
 
 Brainfunk-only commands
 ----------
