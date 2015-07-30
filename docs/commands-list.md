@@ -1,8 +1,5 @@
-Basic Documentation (view raw)
+Basic Documentation
 ==========
-
-Brainfuck-to-Brainfunk
-----------
 
 
 Traditional Brainfuck to Brainfunk
