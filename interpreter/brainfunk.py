@@ -18,7 +18,7 @@ def execute(filename):
 
 
 def evaluate(code):
-  code     = cleanup(list(code))
+  code     = cleanup(code.split())
   bracemap = buildbracemap(code)
 
   cells, codeptr, cellptr = [0], 0, 0
@@ -67,7 +67,7 @@ def evaluate(code):
 
 
 def cleanup(code):
-  return filter(lambda x: x in ['Toot', 'Doot', 'TootToot', 'TootTootToot', 'DootDoot', 'DootDootDoot', 'Brap', 'Prap', 'Plap', 'Blap', 'Parp', 'Honk', 'DootDootDo', 'TootTootTo'], code)
+  return filter(lambda x: x in ['Toot', 'Doot', 'TootToot', 'TootTootToot', 'DootDoot', 'DootDootDoot', 'Brap', 'Prap', 'Plap', 'Blap', 'Parp', 'Honk', 'DootDootDo', 'TootTootTo', ' '], code)
 
 
 def buildbracemap(code):
