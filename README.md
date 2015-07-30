@@ -27,3 +27,4 @@ Thanks to
 drnick - the split change, general help
 pocmo - the original brainfuck interpreter
 aerosol - taking my spot on the searches with his erlang brainfuck implementation
+teqwve - general help
