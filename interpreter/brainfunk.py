@@ -37,25 +37,26 @@ def evaluate(code):
       cells[cellptr] = cells[cellptr] + 1 if cells[cellptr] < 255 else 0
 
     if command == "TootTootToot":
-      cells[cellptr] = cells[cellptr] + 10 if (cells[cellptr] + 10) < 255 else 0
+      cells[cellptr] = cells[cellptr] + 10 if cells[cellptr] < 255 else ((cells[cellptr] + 10) - 255)
 
     if command == "DootDoot":
       cells[cellptr] = cells[cellptr] - 1 if cells[cellptr] > 0 else 255
 
     if command == "DootDootDoot":
-      cells[cellptr] = cells[cellptr] - 1 if(cells[cellptr] - 10) > 0 else 255
+      cells[cellptr] = cells[cellptr] - 10 if cells[cellptr] > 0 else ((cells[cellptr] - 10) + 255)
 
     if command == "DootDootDo":
-      cells[cellptr] = cells[cellptr] - 5 if(cells[cellptr] - 5) > 0 else 255
+      cells[cellptr] = cells[cellptr] - 5 if cells[cellptr] > 0 else ((cells[cellptr] - 5) + 255)
 
     if command == "TootTootTo":
-      cells[cellptr] = cells[cellptr] + 5 if(cells[cellptr] + 5) > 0 else 255
+      cells[cellptr] = cells[cellptr] + 5 if cells[cellptr] < 255 else ((cells[cellptr] + 5) - 255)
 
     if command == "Brap":
       cells[cellptr] = 0
 
     if command == "Prap":
       cells[cellptr] = 255
+      
 
     if command == "Plap" and cells[cellptr] == 0: codeptr = bracemap[codeptr]
     if command == "Blap" and cells[cellptr] != 0: codeptr = bracemap[codeptr]
