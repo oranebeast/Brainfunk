@@ -1,4 +1,4 @@
-Basic Documentation
+Basic Documentation (view raw)
 ==========
 
 Brainfuck-to-Brainfunk
