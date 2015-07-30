@@ -20,3 +20,10 @@ Other changes
 * Brap sets cell to zero, no matter what.
 * Prap sets cell to 255, no matter what.
 * Check documentation (DOCS) for more.
+
+Thanks to
+----------
+
+drnick - the split change, general help
+pocmo - the original brainfuck interpreter
+aerosol - taking my spot on the searches with his erlang brainfuck implementation
